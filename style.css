@@ -107,16 +107,17 @@ main p {
 
 .grid-container {
     display: grid;
+    grid-template-columns: repeat(3,1fr);
     border-top: 1px solid #eee;
     margin-top: 10px;
     padding: 0px;
-    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    grid-column-gap: 40px;
+    width: 100%;
 
 }
 
-.item1, .item2, .item3 {
-    display: grid;
+.grid-container img {
+    display:block;
+    max-width:100%;
+    height:auto;
 }
-
